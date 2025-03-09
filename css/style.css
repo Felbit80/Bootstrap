@@ -5,3 +5,113 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.menu {
+    background-color: #016559;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoPerfil {
+    border-radius: 100%;
+    border: 5px solid #004a42;
+    height: 160px;
+    width: 160px;
+}
+.fotoPerfil img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    opacity: 70%;
+    padding: 5px;
+    transition: 0.25s;
+} .navbar a:hover {
+    color: rgb(255, 255, 255);
+    opacity: 90%;
+    padding: 5px;
+}
+.navbar .selecionado {
+    opacity: 100% !important;
+    font-weight: 600;
+}
+
+.navbar-dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        background-color: #016559;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .fotoPerfil {
+        border-radius: 100%;
+        border: 5px solid #004a42;
+        height: 130px;
+        width: 130px;
+    }
+    .fotoPerfil img {
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+    }
+    
+    .navbar {
+        display: none;
+        flex-direction: row;
+    }
+
+    .navbar-dropdown {
+        display: block;
+    }
+
+    .dropdown-menu li a {
+        text-decoration: none;
+        color: white;
+        opacity: 70%;
+        padding: 5px;
+        transition: 0.25s;
+    } .dropdown-menu li a:hover {
+        color: rgb(255, 255, 255);
+        opacity: 90%;
+        padding: 5px;
+    }
+    .dropdown-links {
+        background-color: #016559;
+        text-align: center;
+    }
+    .dropdown-links .selecionado {
+        opacity: 100% !important;
+        font-weight: 600;
+    }
+
+    .btn-navbar-dropdown {
+        margin: 10px;
+        width: 160px;
+        margin: 10px 0 10px 10px;
+        font-size: 17.5px;
+        font-weight: 600;
+        background-color: #004a42 !important;
+        border: none;
+        transition: 0.25s;
+    } .btn-navbar-dropdown:hover {
+        background-color: #003732 !important;
+    }
+}

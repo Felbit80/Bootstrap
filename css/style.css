@@ -30,6 +30,11 @@
     height: 150px;
     width: 150px;
     border-radius: 100%;
+    transition: 0.25s;
+}
+.fotoPerfil img:hover {
+    scale: 1.1;
+    border: 5px solid #003732;
 }
 
 .navbar {
@@ -98,9 +103,41 @@
 .img-link {
     height: 50px;
     width: 50px;
+    filter: grayscale(1);
+    transition: 0.3s;
+}
+.img-link:hover {
+    filter: grayscale(0);
 }
 
 /* Conteúdo About */
+
+/* Conteúdo Experience */
+
+.conteudo-experience {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+.conteudo-experience h1 {
+    font: normal 600 clamp(2.5rem, 10vw, 4.5rem) "Anta", sans-serif;
+    color: #016559;
+}
+
+.descExp h2 {
+    font: normal 600 clamp(1.9rem, 7vw, 2.8rem) "Anta", sans-serif;
+}
+.descExp h3 {
+    font: normal 500 clamp(1.5rem, 5vw, 2rem) "Anta", sans-serif;
+    opacity: 80%;
+}
+
+.dateExp {
+    color: #003732;
+    font-weight: 700;
+}
 
 @media screen and (max-width: 768px) {
     .menu {
@@ -192,5 +229,21 @@
 
     .img-link {
         margin: 0 10px;
+    }
+
+    /* --------------------------------- */
+
+    .conteudo-experience {
+        height: auto;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        margin: auto;
+    }
+
+    .conteudo-experience h1 {
+        text-align: center !important;
     }
 }

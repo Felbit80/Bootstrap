@@ -112,7 +112,7 @@
 
 /* Conteúdo About */
 
-/* Conteúdo Experience */
+/* Conteúdo Experience / Education */
 
 .conteudo-experience {
     height: 100vh;
@@ -139,7 +139,12 @@
     font-weight: 700;
 }
 
-/* Conteúdo Experience */
+/* Conteúdo Experience / Education */
+
+/* Conteúdo Skills */
+
+
+/* Conteúdo Skills */
 
 @media screen and (max-width: 768px) {
     .menu {
@@ -247,5 +252,15 @@
 
     .conteudo-experience h1 {
         text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .imagens-habilidades {
+        display: grid;
+        grid-template-columns: 60px 60px;
+        grid-template-rows: 60px 60px;
+        place-content: center;
+        place-items: center;
     }
 }
